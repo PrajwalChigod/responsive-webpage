@@ -1,0 +1,214 @@
+body    {
+    margin: 0%;
+    padding: 0 10em;
+}
+p   {
+    font-weight: lighter;
+    color: gray;
+}
+.fas    {
+    font-weight: lighter;
+    color: grey;
+}
+.header-name {
+    display: table;
+    border-bottom: 1px solid #c0c0c0;
+    box-shadow: 0 2px #c0c0c0;
+}
+
+.header-name > h1 {
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 1em;
+    width: 100%;
+    font-size: 5rem;
+}
+.header-navbar  {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: space-around; 
+}
+.header-navbar > div    {
+    padding: 1em;
+    flex-direction: row;
+}
+a   {
+    text-decoration: none;
+    color: black;
+}
+.news-main-image > img    {
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+}
+.news-main > p  {
+    padding-bottom: 1em;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 2px #c0c0c0;
+}
+.top-news   {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 2px #c0c0c0;
+}
+.news-list > ul li  {
+    padding: 0.5em;
+    border-bottom: 1px dotted lightgray;
+    box-shadow: 0 2px #c0c0c0;
+    list-style-type: none;
+}
+.top-news-left  {
+    font-weight: bolder;
+    font-size: 0.5cm;
+}
+.score-table    {
+    overflow-x: auto;
+    padding-left: 7rem;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+    color: gray;
+}
+
+th, td {
+    text-align: left;
+    padding: 1em 0;
+    font-weight: lighter;
+}
+
+.current-weather    {
+    display: table;
+}
+.current-weather > img  {
+    height: 10em;
+    width: 15em;
+    object-fit: fit;
+}
+.current-weather > div   {
+    vertical-align: middle;
+    display: table-cell;
+    padding: 0 1em;
+    font-size: 2rem;
+}
+.week-weather   {
+    display: flex;
+    flex-flow: row;
+}
+.day-weather    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.day-img    {
+    height: 200px;
+    width: 200px;
+}
+.latest-news-container  {
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 2px #c0c0c0;
+}
+.latest-news-heading    {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid lightgray;
+}
+.latest-news-heading > div:first-child{
+    font-weight: bolder;
+}
+.news-content   {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+.news   {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.news-img > img  {
+    height: 100px;
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+    padding-bottom: 1em;
+    object-fit: fill;
+}
+.main-footer    {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 2em 0;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 3px #c0c0c0;
+}
+
+/* ==============================================================
+
+                     MEDIA QUEIRES
+
+================================================================= */
+
+@media only screen and (max-width: 780px)   {
+    body {
+        margin: 0%;
+        padding: 0;
+    }
+    .header-name > h1   {
+        padding: 0.5em;
+        font-size: 2rem;
+    }
+    .header-navbar  {
+        display: none;
+    }
+    .score-table    {
+        padding: 0;
+    }
+    .news-main-image    {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .news-main-text {
+        width: 100%;
+        position: absolute;
+        margin-top: -16rem;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    tr:first-child{background-color: #8282d3}
+    tr:nth-child(3){background-color: lightgray}
+    tr:nth-child(5){background-color: lightgray}
+    .day-img    {
+        height: 75px;
+        width: 75px;
+    }
+    .current-weather > div   {
+        padding: 0 1em;
+        font-size: 1.5rem;
+    }
+    .news-img   {
+        float: left;
+        margin: 0;
+    }
+    .news-img > img {
+        height: 100px;
+        width: 100px;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    .news   {
+        display: inline;
+    }
+    .news > div:nth-child(2)    {
+        margin-top: -1.5em;
+    }
+}
